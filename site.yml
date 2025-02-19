@@ -1,0 +1,6 @@
+---
+- name: Déployer HAProxy avec 2 sites web et MariaDB
+  hosts: all
+  become: true
+  roles:
+    - /home/alex/haproxy_mariadb

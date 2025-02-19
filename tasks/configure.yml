@@ -1,0 +1,5 @@
+---
+- name: Copier la configuration HAProxy
+  template:
+    src: haproxy.cfg.j2
+    dest: /opt/haproxy_mariadb/haproxy.cfg

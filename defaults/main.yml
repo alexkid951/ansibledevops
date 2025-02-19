@@ -1,0 +1,5 @@
+---
+mysql_root_password: "alex"
+mysql_user: "alex"
+mysql_password: "alex"
+mysql_database: "alex"

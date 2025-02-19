@@ -1,0 +1,20 @@
+---
+- name: Copier les fichiers du site 1
+  copy:
+    src: files/site1/
+    dest: /opt/haproxy_mariadb/site1/
+
+- name: Copier les fichiers du site 2
+  copy:
+    src: files/site2/
+    dest: /opt/haproxy_mariadb/site2/
+
+- name: Copier le script SQL d'initialisation
+  copy:
+    src: files/init-db.sql
+    dest: /opt/haproxy_mariadb/init-db.sql
+
+- name: Démarrer les services Docker
+  command: docker-compose up -d
+  args:
+    chdir: /opt/haproxy_mariadb/
