@@ -1,0 +1,6 @@
+---
+haproxy_sites:
+  - server_name: "site1.local"
+    root: "/opt/haproxy_mariadb/site1"
+  - server_name: "site2.local"
+    root: "/opt/haproxy_mariadb/site2"
